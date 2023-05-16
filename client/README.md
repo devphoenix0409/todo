@@ -1,38 +1,46 @@
-# create-svelte
+# SvelteKit Apollo GraphQL Example with create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A bare-bones [SvelteKit](https://kit.svelte.dev) and [Apollo GraphQL](https://www.apollographql.com) starter.
 
-## Creating a project
+[Demo link](https://sveltekit-apollo-graphql-typescript.netlify.app)
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+[Javascript version](https://github.com/tmrp/sveltekit-apollo-graphql)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+create a `.env` file in the project root directory and copy over the contents of `.env.example`
+
+Install dependencies with Yarn of NPM:
 
 ```bash
-npm run dev
+yarn
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# or
+
+npm install
+```
+
+Start development server with:
+
+```bash
+yarn dev
+
+# or
+
+npm run dev
 ```
 
 ## Building
 
-To create a production version of your app:
+Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
 ```bash
+yarn build
+
+# or
+
 npm run build
+
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
