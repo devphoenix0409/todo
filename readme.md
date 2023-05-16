@@ -24,3 +24,6 @@ yarn dev
 ```
 
 ### 4. Result
+
+https://github.com/devphoenix0409/todo/assets/66425989/44ba05e4-3579-486b-8e6e-adb4fac8c0b3
+
