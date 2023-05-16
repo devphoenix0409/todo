@@ -31,13 +31,7 @@
 			<Row>
 				<Cell numeric>{item.id}</Cell>
 				<Cell>{item.title}</Cell>
-				<Cell
-					><img
-						width="100"
-						src="https://refine.ams3.cdn.digitaloceanspaces.comundefined"
-						alt=""
-					/></Cell
-				>
+				<Cell>{item.body}</Cell>
 				<Cell>{item.createdAt}</Cell>
 				<Cell>
 					<a href={`/post/${item.id}`}>Edit</a>
